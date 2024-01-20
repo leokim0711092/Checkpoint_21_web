@@ -1,0 +1,20 @@
+
+1.Server
+cd ~/webpage_ws/tortoisebot_webapp
+python -m http.server 7000
+
+2. Gazebo
+source ~/simulation_ws/devel/setup.bash
+roslaunch tortoisebot_gazebo tortoisebot_docking.launch
+
+3. Map slam
+source ~/simulation_ws/devel/setup.bash
+roslaunch tortoisebot_slam mapping.launch
+
+4. ROSBridge / Video Servers
+source ~/simulation_ws/devel/setup.bash
+roslaunch course_web_dev_ros web.launch
+
+5. Robot description
+source ~/simulation_ws/devel/setup.bash
+roslaunch course_web_dev_ros tf2_web.launch

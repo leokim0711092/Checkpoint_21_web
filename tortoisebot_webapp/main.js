@@ -30,7 +30,7 @@ var app = new Vue({
                 this.loading = false
 
             // Camera
-                // this.setCamera()
+                this.setCamera()
 
 
             //Map
@@ -67,7 +67,7 @@ var app = new Vue({
                 this.unset3DViewer()
                 //map
                 document.getElementById('map').innerHTML = ''                
-                // document.getElementById('divCamera').innerHTML = ''
+                document.getElementById('divCamera').innerHTML = ''
 
                 
 
@@ -133,7 +133,7 @@ var app = new Vue({
                 host: host,
                 width: 320,
                 height: 240,
-                topic: '/camera/rgb/image_raw',
+                topic: '/camera/image_raw',
                 ssl: true,
             })
         },
