@@ -18,3 +18,7 @@ roslaunch course_web_dev_ros web.launch
 5. Robot description
 source ~/simulation_ws/devel/setup.bash
 roslaunch course_web_dev_ros tf2_web.launch
+
+6. Action Server
+source ~/simulation_ws/devel/setup.bash
+rosrun course_web_dev_ros tortoisebot_action_server.py
